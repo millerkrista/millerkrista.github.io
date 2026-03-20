@@ -4,12 +4,11 @@
 (https://github.com/millerkrista/millerkrista.github.io/blob/main/APHL%20AC26%20Poster%20First%20Draft.pdf)
 
 
-<html>
 
 <head>
 <meta http-equiv=Content-Type content="text/html; charset=windows-1252">
 <meta name=Generator content="Microsoft Word 15 (filtered)">
-<style>
+
 <!--
  /* Font Definitions */
  @font-face
@@ -118,7 +117,7 @@ div.WordSection1
 ul
 	{margin-bottom:0in;}
 -->
-</style>
+
 
 </head>
 
