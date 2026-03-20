@@ -10,7 +10,7 @@ nav_order: 1
 ![APHL 2026 Annual Conference Poster](https://raw.githubusercontent.com/millerkrista/millerkrista.github.io/main/assets/APHL_AC26_poster.png)
 
 # Supplementary Figures
-**Supplementary Figure 1**. floc and PopPUNK sensitivity and specificity for carbapenem-resistant *Klebsiella pneumoniae*
+**Supplementary Table 1**. floc and PopPUNK sensitivity and specificity for carbapenem-resistant *Klebsiella pneumoniae*
 
 | Method | Average Sensitivity | Average Specificity |
 |---|---|---|
