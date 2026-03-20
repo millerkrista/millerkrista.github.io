@@ -6,6 +6,7 @@ nav_order: 1
 ---
 
 [Download poster PDF here](https://github.com/millerkrista/millerkrista.github.io/blob/main/assets/APHL%20AC26%20Poster%20First%20Draft.pdf)
+
 ![APHL 2026 Annual Conference Poster](https://github.com/millerkrista/millerkrista.github.io/blob/main/assets/APHL_AC26_poster.png)
 
 # Supplementary Figures
