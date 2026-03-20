@@ -52,10 +52,10 @@ Once we had clustering outputs from PopPUNK and floc, we noticed that floc clust
 ## Sensitivity and Specificity
 Sensitivity was calculated as (true positives) / (true positives + false negatives).
 Specificity was calculated as (true negatives) / (true negatives + false positives).
-- **True positives:** isolates belonging to the same DCLS cluster being assigned to the same floc/PopPUNK cluster.
-- **False negatives:** isolates belonging to the same DCLS cluster being assigned to different floc/PopPUNK clusters.
-- **True negatives:** isolates belonging to different DCLS clusters being assigned to different floc/PopPUNK clusters.
-- **False positives:** isolates belonging to different DCLS clusters being assigned to the same floc/PopPUNK cluster.
+- **True positives:** isolates belonging to the same DCLS cluster assigned to the same floc/PopPUNK cluster.
+- **False negatives:** isolates belonging to the same DCLS cluster assigned to different floc/PopPUNK clusters.
+- **True negatives:** isolates belonging to different DCLS clusters assigned to different floc/PopPUNK clusters.
+- **False positives:** isolates belonging to different DCLS clusters assigned to the same floc/PopPUNK cluster.
   
 ---
 # References
