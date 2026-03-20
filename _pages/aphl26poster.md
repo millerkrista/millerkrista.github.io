@@ -24,21 +24,17 @@ We ran all reads through the CDC/PHoeNIx pipeline, version 2.1.1, to obtain qual
 ### Database Creation
 
 1. Created a custom database of 645 CRAB isolates using poppunk create-db.
-
 2. Fit a Bayesian Gaussian Mixture Model to the database using poppunk fit-model bgmm.
 
 ### Without PopPIPE
 
 1. Once the database was created, we queried with another 29 CRAB isolates using poppunk_assign.
-
 2. Created visualizations using poppunk_visualise with the microreact flag.
 
 ### With PopPIPE
 
 1. Once the database was created, we ran the PopPIPE workflow on the database.
-
 2. Queried the database with another 29 CRAB isolates using poppunk_assign.
-
 3. Ran PopPIPE workflow to get subcluster identities for the 29 CRAB isolates.
  
 ## floc
@@ -60,7 +56,11 @@ Specificity was calculated as (true negatives) / (true negatives + false positiv
 ---
 # References
 Argimón S, Abudahab K, Goater RJE, et al. Microreact: visualizing and sharing data for genomic epidemiology and phylogeography. *Microb Genom.* 2016;2(11):e000093. doi:10.1099/mgen.0.000093
+
 Created with BioRender.com
+
 Hagey JV, Vlachos N, Kent AG, et al. CDCgov/phoenix: v2.2.0. Zenodo. [https://doi.org/10.5281/zenodo.8147510](https://doi.org/10.5281/zenodo.8147510)
+
 Johnson J. 2025. floc. [https://github.com/DOH-JDJ0303/floc](https://github.com/DOH-JDJ0303/floc)
+
 Lees JA, Harris SR, Tonkin-Hill G, et al. Fast and flexible bacterial genomic epidemiology with PopPUNK. *Genome Res.* 2019;29(2):304-316. doi:10.1101/gr.241455.118
