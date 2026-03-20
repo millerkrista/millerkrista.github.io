@@ -1,7 +1,7 @@
 remote_theme: just-the-docs/just-the-docs
 title: Krista Miller's Homepage
 description: A place for storing projects and updates
-
+markdown: kramdown
 
 include:
   - _pages
