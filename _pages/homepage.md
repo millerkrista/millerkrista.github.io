@@ -1,7 +1,8 @@
 ---
-id: home
+layout: home
 title: Home
-auto_title: false
+nav_order: 1
 ---
 
+# About Me
 # add some notes of about me, education, history, etc.
