@@ -47,7 +47,9 @@ We ran all reads through the CDC/PHoeNIx pipeline, version 2.1.1, to obtain qual
 3. Ran distance output through custom python script (using BioPython Phylo) to obtain neighbor-joining trees.
 
 ## Dryad
-Once we had clustering outputs from PopPUNK and floc, we noticed that floc cluster 5 (floc's largest cluster output) and PopPUNK+PopPIPE strain 2 contained similar DCLS cluster IDs. We decided to run genome assemblies belonging to floc cluster 5 and PopPUNK strain 2 through Dryad, a DCLS validated reference-based SNP calling pipeline. We wanted to see the SNP ranges of cluster 5 and strain 2, as well as the tree topology on Dryad trees compared to PopPUNK+PopPIPE and floc trees.
+Once we had clustering outputs from PopPUNK and floc, we noticed that floc cluster 5 (floc's largest cluster output) and PopPUNK+PopPIPE strain 2 contained similar DCLS cluster IDs. We decided to run genome assemblies belonging to floc cluster 5 and PopPUNK strain 2 through Dryad, a DCLS validated reference-based SNP calling pipeline (workflow pictured below). We wanted to see the SNP ranges of cluster 5 and strain 2, as well as the tree topology on Dryad trees compared to PopPUNK+PopPIPE and floc trees.
+
+![Dryad Workflow Image](https://raw.githubusercontent.com/millerkrista/millerkrista.github.io/main/assets/Dryad_workflow.png)
 
 ## Sensitivity and Specificity
 Sensitivity was calculated as (true positives) / (true positives + false negatives).
