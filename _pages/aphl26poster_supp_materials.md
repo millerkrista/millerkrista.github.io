@@ -68,3 +68,8 @@ Hagey JV, Vlachos N, Kent AG, et al. CDCgov/phoenix: v2.2.0. Zenodo. [https://do
 Johnson J. 2025. floc. [https://github.com/DOH-JDJ0303/floc](https://github.com/DOH-JDJ0303/floc)
 
 Lees JA, Harris SR, Tonkin-Hill G, et al. Fast and flexible bacterial genomic epidemiology with PopPUNK. *Genome Res.* 2019;29(2):304-316. doi:10.1101/gr.241455.118
+
+
+# Acknowledgements
+This work was supported by the Association of Public Health Laboratories (APHL) and Centers for Disease Control and Prevention (CDC) Public Health Laboratory Fellowship Program. We would like to thank the bioinformaticians at DCLS for mentorship and technical advice - Alexandra Lorentz, PhD; Logan Fink, MS; Rachael St. Jacques, MS; Molly Creighton, MS; and Gretchen Cote, MS. We would also like to thank the Sequencing and Bioinformatics Group at DCLS for their assistance with data processing and sequencing. Special thanks goes to Jared Johnson, PhD of the Washington State Department of Health for technical guidance.
+
