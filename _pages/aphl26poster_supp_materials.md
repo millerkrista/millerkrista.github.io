@@ -17,20 +17,27 @@ nav_order: 1
 |---|---|---|
 | floc | 1 | 0.961581971 |
 | PopPUNK | 1 | 0.027977687 |
-| PopPUNK+PopPIPE | 1 | 0.916195334 |
+| PopPUNK+PopPIPE (RefDB) | 1 | 0.916195334 |
+| PopPUNK+PopPIPE (CustomDB) | 1 | 0.913134983 |
 
 
 
 **Supplementary Table 2**. Further Work Since Poster Creation, PopPUNK+PopPIPE misclustering likely due to custom database
-
-To determine why PopPUNK is incorrectly separating genetically related isolates from each other (see poster Figure 3), we looked at output data from a PopPUNK+PopPIPE workflow run on our CRAB data that did not create a custom database. Instead, the PopPUNK reference database for *Acinetobacter baumannii* was utilized. Below are the sensitivity and specificity scores for that workflow compared to floc. Results showed that this PopPUNK+PopPIPE output was slightly higher but relatively equivalent to floc. Ultimately, we have decided to focus on floc moving forward because of its improved flexibility and output potential.
 
 | Method | Average Sensitivity | Average Specificity |
 |---|---|---|
 | floc | 1 | 0.8901 |
 | PopPUNK+PopPIPE (RefDB) | 1 | 0.9035 |
 
+---
+# Further Discussion
+To determine why PopPUNK is incorrectly separating genetically related isolates from each other (see poster Figure 3), we looked at output data from a PopPUNK+PopPIPE workflow run on our CRAB data when we did not create a custom database. Instead, the PopPUNK reference database for *Acinetobacter baumannii* was utilized. Table 2 shows the sensitivity and specificity scores for that workflow compared to floc. Results showed that this PopPUNK+PopPIPE RefDB specificity output was slightly increased but relatively equivalent to floc. When the same workflow was run on *Klebsiella pneumoniae*, we saw that floc had increased specificity when compared to the PopPUNK+PopPIPE RefDB workflow (Table 1). 
 
+The explanation as to why the use of our custom database caused PopPUNK to misclassify the isolates is likely found in the way PopPUNK calls clusters. 
+floc estimates pairwise genetic distances between sequences using the sourmash k-mer containment method. floc uses a single k-mer length of 31 and thereby produces a single distance metric for each pair that combines all sources of genomic variation. floc then assigns genomes to clusters using a fixed distance threshold, assigning genomes to a cluster if they fall below the distance threshold or founding a new cluster otherwise. The default threshold utilized (0.03) meant that floc was creating clusters with larger SNP ranges than PopPUNK, but also that we were not seeing any false negatives. 
+In contrast, PopPUNK calculates pairwise distances between sequences across a range of k-mer lengths. By utilizing multiple k-mer lengths, PopPUNK is able to estimate both core and accessory gene distances. PopPUNK's cluster boundaries are determined by the Bayesian Gaussian mixture model fit, not a static threshold. Therefore, a poor model fit can lead to inaccurate cluster assignment. The isolates we used to create the database were highly clonal, which likely led to a poor model fit. This is likely why we saw the results we did in poster Figure 3.
+
+Although we saw an improvement in PopPUNK performance when using the reference database, it is important for DCLS purposes that the method used performs well for multiple species. Ultimately, we have decided to focus on floc moving forward because of its improved flexibility and output potential.
 
 ---
 # Supplementary Methods
@@ -55,9 +62,6 @@ We ran all reads through the CDC/PHoeNIx pipeline, version 2.1.1, to obtain qual
 2. Queried the database with another 29 CRAB isolates using poppunk_assign.
 3. Ran PopPIPE workflow to get subcluster identities for the 29 CRAB isolates.
  
-### Notes
-PopPUNK calculates pairwise distances between sequences across a range of k-mer lengths. By utilizing multiple k-mer lengths, PopPUNK is able to estimate both core and accessory gene distances. PopPUNK's cluster boundaries are determined by the Bayesian Gaussian mixture model fit. Therefore, a poor model fit can lead to inaccurate cluster assignment (which is likely what occurred with our poster data).
-
 
 ## floc
 
@@ -66,8 +70,6 @@ PopPUNK calculates pairwise distances between sequences across a range of k-mer 
 2. Queried the database with another 29 CRAB isolates.
 3. Ran distance output through custom python script (using BioPython Phylo) to obtain neighbor-joining trees.
 
-### Notes
-floc estimates pairwise genetic distances between sequences using the sourmash k-mer containment method. floc uses a single k-mer length of 31 and thereby produces a single distance metric for each pair that combines all sources of genomic variation. floc assigns genomes to clusters using a fixed distance threshold, assigning genomes to a cluster if they fall below the threshold or founding a new cluster otherwise. 
 
 ## Dryad
 Dryad is a DCLS validated reference-based SNP calling pipeline (workflow pictured below). We utilized Dryad on floc cluster 5 (and PopPUNK strain 2, but this was not pictured on poster) to see what the exact SNP range of the floc cluster was compared to the PopPUNK cluster.
