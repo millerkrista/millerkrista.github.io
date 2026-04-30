@@ -1,6 +1,6 @@
 ---
 layout: default
-title: NIH Summer Internship Project
+title: NIH Summer 2024 Internship Project
 parent: Posters & Presentations
 nav_order: 2
 ---
