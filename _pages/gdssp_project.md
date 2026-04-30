@@ -1,3 +1,10 @@
+---
+layout: default
+title: NIH Summer Internship Project
+parent: Posters & Presentations
+nav_order: 2
+---
+
 # Positive Selection and Subpopulation Analysis of HIV-1 *env* Gene in Participants with Chronic Infection
 This project was done as part of the National Institutes of Health Intramural Program's Graduate Data Science Summer Program. I worked under Frida Belinky, a computational biologist with Eli Boritz's lab at the National Institute of Allergy and Infectious Disease. With Frida's invaluable mentorship, I created a novel workflow for analyzing high-throughput single-genome sequencing data from 40 participants with chronic HIV-1 infection. 
 
