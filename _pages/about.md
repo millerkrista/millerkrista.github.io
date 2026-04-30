@@ -11,6 +11,8 @@ I am currently an APHL-CDC Bioinformatics Fellow with the Virginia Division of C
 
 I was born and raised in rural South Dakota, called Washington state home from 2017-2025 while I achieved my B.S in Molecular Biology and M.S in Bioinformatics, and now I am located in Richmond, Virginia. My personal hobbies include reading (mostly memoirs and fantasy), cooking, and spending time with my wonderfully intelligent and beautiful dog--we're currently working on predation substitute training. 
 
+### Resume
+[Krista's Resume](https://github.com/millerkrista/millerkrista.github.io/blob/main/assets/KSMResume_updated.pdf)
 ### Please reach out if you'd like to connect!
 [LinkedIn](https://www.linkedin.com/in/krista-miller-bio/) 
 
