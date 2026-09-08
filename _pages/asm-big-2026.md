@@ -29,7 +29,7 @@ Dryad is a DCLS-validated whole-genome reference-based SNP calling pipeline (wor
 
 Foushee is a DCLS-validated reference-free SNP calling pipeline that includes an emm-typing tool (workflow pictured below).
 
-![Foushee Workflow Image} ()
+![Foushee Workflow Image}(https://raw.githubusercontent.com/millerkrista/millerkrista.github.io/main/assets/foushee.png)
 
 
 ## Sensitivity and Specificity
