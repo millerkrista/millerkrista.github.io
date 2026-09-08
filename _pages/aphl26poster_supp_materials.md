@@ -2,7 +2,7 @@
 layout: default
 title: APHL Annual Conference 2026
 parent: Posters & Presentations
-nav_order: 1
+nav_order: 2
 ---
 
 [Download poster PDF here](https://github.com/millerkrista/millerkrista.github.io/blob/main/assets/APHL%20AC26%20Poster.pdf)
