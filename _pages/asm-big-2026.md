@@ -20,10 +20,17 @@ We found that PHoeNIx v2.3.2 created genome assemblies that were more compatible
 ## Current DCLS Methods for Cluster Detection
 After sequencing and PHoeNIx quality control, data is uploaded to NCBI Pathogen Detection.
 NCBI Pathogen Detection will then send an alert if/when an isolate has matched with a cluster.
-DCLS scientists then confirm this cluster by running any/all Virginia isolates from that cluster through Dryad.
+DCLS scientists then confirm this cluster by running any/all Virginia isolates from that cluster through a species-specific SNP calling pipeline.
+Carbapenem-resistant *Klebsiella pneumoniae* and *Acinetobacter baumannii* would both be run through Dryad. *Streptococcus pyogenes* would be run through Foushee. *Neisseria meningitidis* would be referred to CDC to be run through BMGAP.
 Dryad is a DCLS-validated whole-genome reference-based SNP calling pipeline (workflow pictured below). 
 
 ![Dryad Workflow Image](https://raw.githubusercontent.com/millerkrista/millerkrista.github.io/main/assets/Dryad_workflow.png)
+
+
+Foushee is a DCLS-validated reference-free SNP calling pipeline that includes an emm-typing tool (workflow pictured below).
+
+![Foushee Workflow Image} ()
+
 
 ## Sensitivity and Specificity
 Sensitivity was calculated as (true positives) / (true positives + false negatives).
