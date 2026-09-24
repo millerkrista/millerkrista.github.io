@@ -5,9 +5,9 @@ parent: Posters & Presentations
 nav_order: 1
 ---
 
-[Download poster PDF here]()insert link to poster in parentheses
+[Download poster PDF here](https://github.com/millerkrista/millerkrista.github.io/blob/main/assets/ASM%20BIG%20poster.pdf)
 
-![APHL 2026 Annual Conference Poster]()insert link to poster image in parentheses
+![ASM BIG 2026 Poster](https://raw.githubusercontent.com/millerkrista/millerkrista.github.io/main/assets/ASMBIG2026.png)
 
 ---
 
