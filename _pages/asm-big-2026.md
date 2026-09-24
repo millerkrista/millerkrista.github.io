@@ -43,7 +43,7 @@ We calculated sensitivity and specificity for each DCLS cluster, then took the a
   
 ---
 # References
-Johnson J. 2025. floc. [https://github.com/DOH-JDJ0303/floc](https://github.com/DOH-JDJ0303/floc)
+NW-PaGe. BigBacter v2.0.0. https://github.com/NW-PaGe/bigbacter.
 
 Hagey JV, Vlachos N, Kent AG, et al. CDCgov/phoenix: v2.2.0. Zenodo. [https://doi.org/10.5281/zenodo.8147510](https://doi.org/10.5281/zenodo.8147510)
 
