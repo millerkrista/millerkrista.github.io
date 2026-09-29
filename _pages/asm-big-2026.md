@@ -12,9 +12,10 @@ nav_order: 1
 ---
 
 # Supplementary Methods
+
 ## QC and Genome Assembly
 We ran all reads through the CDC/PHoeNIx pipeline, version 2.3.2, to obtain quality control metrics and genome assemblies for each isolate. 
-We found that PHoeNIx v2.3.2 created genome assemblies that were more compatible with BigBacter than PHoeNIx v2.1.1.
+We found that PHoeNIx v2.3.2 created genome assemblies that were more accurate and more compatible with BigBacter than PHoeNIx v2.1.1. 
 
 
 ## Current DCLS Methods for Cluster Detection
@@ -31,16 +32,24 @@ Foushee is a DCLS-validated reference-free SNP calling pipeline that includes an
 
 ![Foushee Workflow Image](https://raw.githubusercontent.com/millerkrista/millerkrista.github.io/main/assets/foushee.png)
 
+## DCLS Cluster Definitions
+For carbapenem-resistant *Klebsiella pneumoniae* and *Acinetobacter baumannii*, DCLS clusters were defined from DCLS cluster IDs that had been previously assigned to groups of related isolates. There were 10 DCLS clusters for *K. pneumoniae* and 37 DCLS clusters for *Acinetobacter baumannii*. For *Neisseria meningitidis*, DCLS clusters were defined from a combination of VDH-provided outbreak code, sequence type, serogroup, and clonal complex (e.g. Outbreak1_ST1466_Y_CC174). This resulted in 23 DCLS clusters for *N. meningitidis*, some of which were missing an outbreak code, serogroup, or clonal complex information. DCLS clusters for *Streptococcus pyogenes* were defined similarly, from a combination of VDH-provided outbreak code, sequence type, and emm-type (e.g. Outbreak1_ST101_EMM89). This resulted in 87 DCLS clusters for *S. pyogenes*, some of which were missing an outbreak code. Once DCLS clusters were defined, sensitivity and specificity were calculated both on the cluster level and the partition (subcluster) level as shown below.
 
 ## Sensitivity and Specificity
 Sensitivity was calculated as (true positives) / (true positives + false negatives).
 Specificity was calculated as (true negatives) / (true negatives + false positives). 
 We calculated sensitivity and specificity for each DCLS cluster, then took the average across all DCLS clusters for each species to see how BigBacter performed.
-- **True positives:** isolates belonging to the same DCLS cluster assigned to the same BigBacter cluster.
-- **False negatives:** isolates belonging to the same DCLS cluster assigned to different BigBacter clusters.
-- **True negatives:** isolates belonging to different DCLS clusters assigned to different BigBacter clusters.
-- **False positives:** isolates belonging to different DCLS clusters assigned to the same BigBacter cluster.
-  
+- **True positives:** isolates belonging to the same DCLS cluster assigned to the same BigBacter cluster/partition.
+- **False negatives:** isolates belonging to the same DCLS cluster assigned to different BigBacter clusters/partitions.
+- **True negatives:** isolates belonging to different DCLS clusters assigned to different BigBacter clusters/partitions.
+- **False positives:** isolates belonging to different DCLS clusters assigned to the same BigBacter cluster/partition.
+
+---
+# Supplementary Discussion
+## Potential New Clusters Identified by BigBacter
+Coming into the analysis, 115 *Klebsiella pneumoniae* and 310 *Acinetobacter baumannii* isolates did not have known genetic relationships with other isolates. 
+Of these, 57 *K. pneumoniae* and 287 *A. baumannii* isolates were grouped into clusters with at least one other isolate, indicating that there might be a genetic relationship that previous DCLS methods did not identify. These clusters will require further investigation to determine if they are truly closely related.
+
 ---
 # References
 NW-PaGe. BigBacter v2.0.0. https://github.com/NW-PaGe/bigbacter.
